@@ -12,10 +12,24 @@
     "baseUrl": "./",
     "incremental": true,
     "paths": {
-      "@app/database": ["libs/database/src"],
-      "@app/database/*": ["libs/database/src/*"],
-      "@app/users": ["libs/users/src"],
-      "@app/users/*": ["libs/users/src/*"]
+      "@app/database": [
+        "libs/database/src"
+      ],
+      "@app/database/*": [
+        "libs/database/src/*"
+      ],
+      "@app/users": [
+        "libs/users/src"
+      ],
+      "@app/users/*": [
+        "libs/users/src/*"
+      ],
+      "@app/constants": [
+        "libs/constants/src"
+      ],
+      "@app/constants/*": [
+        "libs/constants/src/*"
+      ]
     }
   }
 }
