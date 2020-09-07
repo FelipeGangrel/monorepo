@@ -2,8 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DatabaseSettingsInterface, DatabaseModule } from '@app/database';
-import { User } from './users/user.entity';
-import { UsersModule } from './users/users.module';
+import { User, UsersModule } from '@app/users';
 
 class DatabaseSettings implements DatabaseSettingsInterface {
   type = 'mysql';
@@ -14,10 +13,13 @@ class DatabaseSettings implements DatabaseSettingsInterface {
   database = 'loja1';
 }
 
-const settings = new DatabaseSettings();
+const entities = [User];
 
 @Module({
-  imports: [DatabaseModule.forRoot(settings, [User]), UsersModule],
+  imports: [
+    DatabaseModule.forRoot(new DatabaseSettings(), entities),
+    UsersModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
   exports: [DatabaseModule],

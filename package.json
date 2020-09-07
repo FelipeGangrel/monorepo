@@ -79,10 +79,10 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "@app/core/(.*)": "<rootDir>/libs/core/src/$1",
-      "@app/core": "<rootDir>/libs/core/src",
       "@app/database/(.*)": "<rootDir>/libs/database/src/$1",
-      "@app/database": "<rootDir>/libs/database/src"
+      "@app/database": "<rootDir>/libs/database/src",
+      "@app/users/(.*)": "<rootDir>/libs/users/src/$1",
+      "@app/users": "<rootDir>/libs/users/src"
     }
   }
 }
