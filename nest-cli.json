@@ -43,6 +43,24 @@
       "compilerOptions": {
         "tsConfigPath": "libs/constants/tsconfig.lib.json"
       }
+    },
+    "clients": {
+      "type": "library",
+      "root": "libs/clients",
+      "entryFile": "index",
+      "sourceRoot": "libs/clients/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/clients/tsconfig.lib.json"
+      }
+    },
+    "administrators": {
+      "type": "library",
+      "root": "libs/administrators",
+      "entryFile": "index",
+      "sourceRoot": "libs/administrators/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/administrators/tsconfig.lib.json"
+      }
     }
   }
 }

@@ -84,7 +84,11 @@
       "@app/users/(.*)": "<rootDir>/libs/users/src/$1",
       "@app/users": "<rootDir>/libs/users/src",
       "@app/constants/(.*)": "<rootDir>/libs/constants/src/$1",
-      "@app/constants": "<rootDir>/libs/constants/src"
+      "@app/constants": "<rootDir>/libs/constants/src",
+      "@app/clients/(.*)": "<rootDir>/libs/clients/src/$1",
+      "@app/clients": "<rootDir>/libs/clients/src",
+      "@app/administrators/(.*)": "<rootDir>/libs/administrators/src/$1",
+      "@app/administrators": "<rootDir>/libs/administrators/src"
     }
   }
 }

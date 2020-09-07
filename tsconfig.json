@@ -29,6 +29,18 @@
       ],
       "@app/constants/*": [
         "libs/constants/src/*"
+      ],
+      "@app/clients": [
+        "libs/clients/src"
+      ],
+      "@app/clients/*": [
+        "libs/clients/src/*"
+      ],
+      "@app/administrators": [
+        "libs/administrators/src"
+      ],
+      "@app/administrators/*": [
+        "libs/administrators/src/*"
       ]
     }
   }
