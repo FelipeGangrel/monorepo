@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/loja1/src",
+  "loja1": true,
+  "root": "apps/loja1",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/loja1/tsconfig.app.json"
+  },
+  "projects": {
+    "loja1": {
+      "type": "application",
+      "root": "apps/loja1",
+      "entryFile": "main",
+      "sourceRoot": "apps/loja1/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/loja1/tsconfig.app.json"
+      }
+    },
+    "database": {
+      "type": "library",
+      "root": "libs/database",
+      "entryFile": "index",
+      "sourceRoot": "libs/database/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/database/tsconfig.lib.json"
+      }
+    }
+  }
+}
