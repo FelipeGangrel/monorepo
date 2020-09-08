@@ -8,6 +8,33 @@
     "tsConfigPath": "apps/monorepo/tsconfig.app.json"
   },
   "projects": {
+    "monorepo": {
+      "type": "application",
+      "root": "apps/monorepo",
+      "entryFile": "main",
+      "sourceRoot": "apps/monorepo/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/monorepo/tsconfig.app.json"
+      }
+    },
+    "loja1": {
+      "type": "application",
+      "root": "apps/loja1",
+      "entryFile": "main",
+      "sourceRoot": "apps/loja1/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/loja1/tsconfig.app.json"
+      }
+    },
+    "loja2": {
+      "type": "application",
+      "root": "apps/loja2",
+      "entryFile": "main",
+      "sourceRoot": "apps/loja2/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/loja2/tsconfig.app.json"
+      }
+    },
     "database": {
       "type": "library",
       "root": "libs/database",
@@ -51,33 +78,6 @@
       "sourceRoot": "libs/administrators/src",
       "compilerOptions": {
         "tsConfigPath": "libs/administrators/tsconfig.lib.json"
-      }
-    },
-    "monorepo": {
-      "type": "application",
-      "root": "apps/monorepo",
-      "entryFile": "main",
-      "sourceRoot": "apps/monorepo/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/monorepo/tsconfig.app.json"
-      }
-    },
-    "loja1": {
-      "type": "application",
-      "root": "apps/loja1",
-      "entryFile": "main",
-      "sourceRoot": "apps/loja1/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/loja1/tsconfig.app.json"
-      }
-    },
-    "loja2": {
-      "type": "application",
-      "root": "apps/loja2",
-      "entryFile": "main",
-      "sourceRoot": "apps/loja2/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/loja2/tsconfig.app.json"
       }
     },
     "auth": {

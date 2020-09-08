@@ -12,42 +12,18 @@
     "baseUrl": "./",
     "incremental": true,
     "paths": {
-      "@app/database": [
-        "libs/database/src"
-      ],
-      "@app/database/*": [
-        "libs/database/src/*"
-      ],
-      "@app/users": [
-        "libs/users/src"
-      ],
-      "@app/users/*": [
-        "libs/users/src/*"
-      ],
-      "@app/constants": [
-        "libs/constants/src"
-      ],
-      "@app/constants/*": [
-        "libs/constants/src/*"
-      ],
-      "@app/clients": [
-        "libs/clients/src"
-      ],
-      "@app/clients/*": [
-        "libs/clients/src/*"
-      ],
-      "@app/administrators": [
-        "libs/administrators/src"
-      ],
-      "@app/administrators/*": [
-        "libs/administrators/src/*"
-      ],
-      "@app/auth": [
-        "libs/auth/src"
-      ],
-      "@app/auth/*": [
-        "libs/auth/src/*"
-      ]
+      "@app/administrators": ["libs/administrators/src"],
+      "@app/administrators/*": ["libs/administrators/src/*"],
+      "@app/auth": ["libs/auth/src"],
+      "@app/auth/*": ["libs/auth/src/*"],
+      "@app/clients": ["libs/clients/src"],
+      "@app/clients/*": ["libs/clients/src/*"],
+      "@app/constants": ["libs/constants/src"],
+      "@app/constants/*": ["libs/constants/src/*"],
+      "@app/database": ["libs/database/src"],
+      "@app/database/*": ["libs/database/src/*"],
+      "@app/users": ["libs/users/src"],
+      "@app/users/*": ["libs/users/src/*"]
     }
   }
 }
