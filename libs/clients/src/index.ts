@@ -1,5 +1,5 @@
 export * from './dto';
-export * from './client.entity';
+export * from './entities';
 export * from './clients.controller';
 export * from './clients.module';
 export * from './clients.providers';

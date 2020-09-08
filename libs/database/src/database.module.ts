@@ -1,7 +1,7 @@
 import { DynamicModule, Global } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DatabaseSettingsInterface } from './database-settings.interface';
-import { getOrmConfig } from './get-orm-config';
+import { DatabaseSettingsInterface } from './interfaces';
+import { getOrmConfig } from './utils';
 import { DatabaseService } from './database.service';
 
 @Global()

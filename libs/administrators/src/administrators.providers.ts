@@ -1,6 +1,6 @@
 import { Connection } from 'typeorm';
 import { CONNECTION, ADMINISTRATORS_REPOSITORY } from '@app/constants';
-import { Administrator } from './administrator.entity';
+import { Administrator } from './entities';
 
 export const administratorsProviders = [
   {

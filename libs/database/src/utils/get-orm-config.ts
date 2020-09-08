@@ -1,5 +1,5 @@
 import { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions';
-import { DatabaseSettingsInterface } from './database-settings.interface';
+import { DatabaseSettingsInterface } from '../interfaces';
 
 export function getOrmConfig(
   settings: DatabaseSettingsInterface,

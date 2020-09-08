@@ -6,10 +6,11 @@ import {
   Body,
   Put,
   Param,
+  UseGuards,
 } from '@nestjs/common';
 import { ClientsService } from './clients.service';
 import { CreateClientDto, UpdateClientDto } from './dto';
-import { Client } from './client.entity';
+import { Client } from './entities';
 
 @Injectable()
 @Controller('clients')

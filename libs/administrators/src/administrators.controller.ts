@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { AdministratorsService } from './administrators.service';
 import { CreateAdministratorDto, UpdateAdministratorDto } from './dto';
-import { Administrator } from './administrator.entity';
+import { Administrator } from './entities';
 
 @Injectable()
 @Controller('administrators')
