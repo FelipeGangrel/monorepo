@@ -29,6 +29,5 @@ const jwtSettings: JwtSettingsInterface = {
     ClientsModule,
     AdministratorsModule,
   ],
-  exports: [DatabaseModule],
 })
 export class AppModule {}
