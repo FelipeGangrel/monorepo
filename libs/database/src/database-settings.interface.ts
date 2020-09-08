@@ -5,4 +5,5 @@ export interface DatabaseSettingsInterface {
   username: string;
   password: string;
   database: string;
+  entities?: any[];
 }

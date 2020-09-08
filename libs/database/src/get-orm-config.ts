@@ -3,7 +3,6 @@ import { DatabaseSettingsInterface } from './database-settings.interface';
 
 export function getOrmConfig(
   settings: DatabaseSettingsInterface,
-  entities: any = [],
 ): MysqlConnectionOptions {
   return {
     type: 'mysql',
@@ -12,7 +11,7 @@ export function getOrmConfig(
     username: settings.username,
     password: settings.password,
     database: settings.database,
-    entities,
+    entities: settings.entities || [],
     synchronize: true,
   };
 }

@@ -6,11 +6,8 @@ import { DatabaseService } from './database.service';
 
 @Global()
 export class DatabaseModule {
-  public static forRoot(
-    settings: DatabaseSettingsInterface,
-    entities: any = [],
-  ): DynamicModule {
-    const ormConfig = getOrmConfig(settings, entities);
+  public static forRoot(settings: DatabaseSettingsInterface): DynamicModule {
+    const ormConfig = getOrmConfig(settings);
 
     return {
       module: DatabaseModule,

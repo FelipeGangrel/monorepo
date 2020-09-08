@@ -41,6 +41,12 @@
       ],
       "@app/administrators/*": [
         "libs/administrators/src/*"
+      ],
+      "@app/auth": [
+        "libs/auth/src"
+      ],
+      "@app/auth/*": [
+        "libs/auth/src/*"
       ]
     }
   }
